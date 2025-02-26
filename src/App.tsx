@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import BeTalentLogo from "./assets/BeTalent.svg";
 import InputSearch from "./components/Input/InputSearch";
+import DataTable from "./components/Table/DataTable";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </section>
 
       <section className="employees-table">
+        <DataTable />
       </section>
     </main>
   );
