@@ -1,4 +1,4 @@
-import styles from "../modules/Header.module.css";
+import styles from "./Header.module.css";
 
 interface HeaderProps {
   logo: string;
