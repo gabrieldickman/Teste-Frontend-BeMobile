@@ -1,0 +1,29 @@
+:root{
+  --white-natural: #FFFFFF;
+  --gray-10: 0.1rem solid #DFDFDF;
+  --gray-20: 0.1rem solid #9E9E9E;
+
+  --h3: 400 1.6rem 'Heveltica', sans-serif;
+}
+
+.input{
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  border: var(--gray-10);
+  background-color: var(--white-natural);
+
+  font: var(--h3);
+  color: var(--gray-20);
+}
+
+.input:hover, .input:focus{
+  border: var(--gray-20);
+  outline: none;
+}
+
+@media screen and (max-width: 480px){
+  .input{
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
