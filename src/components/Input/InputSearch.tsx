@@ -1,6 +1,6 @@
 import styles from "./InputSearch.module.css";
 
-function InputSearch() {
+const InputSearch = () => {
   return (
     <input
       className={styles.input}

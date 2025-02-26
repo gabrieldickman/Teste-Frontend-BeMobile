@@ -5,7 +5,7 @@ interface HeaderProps {
   altText?: string;
 }
 
-function Header({logo, altText = "BeTalent Logo"}: HeaderProps) {
+const Header = ({logo, altText = "BeTalent Logo"}: HeaderProps) => {
   return (
     <div className={styles.header}>
       <img src={logo} alt={altText} className={styles.logo}/>
