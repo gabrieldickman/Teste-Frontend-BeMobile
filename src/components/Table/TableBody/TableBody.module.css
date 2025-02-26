@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+
+:root{
+  --white-natural: #FFFFFF;
+  --black-natural: #1C1C1C;
+
+  --h3: 400 1.6rem 'Helvetica neue', sans-serif;
+
+  --border: 1px solid #ddd;
+  --hover: #f5f5f5; 
+  --padding: 1rem 5rem;
+}
+
+.tbody {
+  background-color: var(--white-natural);
+}
+
+.trow {
+  border-bottom: var(--border);
+}
+
+.trow:hover {
+  background-color: var(--hover)
+}
+
+.tdata {
+  padding:var(--padding);
+  text-align: left;
+  font: var(--h3);
+  color: var(--black-natural);
+}
+
+.image {
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  object-fit: cover; 
+}

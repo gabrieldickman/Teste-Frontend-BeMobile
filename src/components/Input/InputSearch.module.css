@@ -1,12 +1,15 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
 :root{
   --white-natural: #FFFFFF;
   --gray-10: 0.1rem solid #DFDFDF;
   --gray-20: 0.1rem solid #9E9E9E;
 
-  --h3: 400 1.6rem 'Heveltica', sans-serif;
+  --h3: 400 1.6rem 'Heveltica neue', sans-serif;
 }
 
 .input{
+  width: 28.7rem;
   padding: 1.6rem;
   border-radius: 0.8rem;
   border: var(--gray-10);

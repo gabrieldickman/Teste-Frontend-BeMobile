@@ -1,21 +1,24 @@
 import formatData from "../../../utils/formatDate";
 import formatPhone from "../../../utils/formatPhone";
 import { Employee } from "../../../types/employee";
+import styles from "./TableBody.module.css";
 
 interface TableBodyProps {
-  employees: Employee[]
+  employees: Employee[];
 }
 
 const TableBody = ({ employees }: TableBodyProps) => {
   return (
-    <tbody>
+    <tbody className={styles.tbody}>
       {employees.map(({ id, name, job, admission_date, phone, image }) => (
-        <tr key={id}>
-          <td><img src={image} alt={`Foto de Perfil de ${name}`}/></td>
-          <td>{name}</td>
-          <td>{job}</td>
-          <td>{formatData(admission_date)}</td>
-          <td>{formatPhone(phone)}</td>
+        <tr key={id} className={styles.trow}>
+          <td className={styles.tdata}>
+            <img src={image} alt={`Foto de Perfil de ${name}`} className={styles.image} />
+          </td>
+          <td className={styles.tdata}>{name}</td>
+          <td className={styles.tdata}>{job}</td>
+          <td className={styles.tdata}>{formatData(admission_date)}</td>
+          <td className={styles.tdata}>{formatPhone(phone)}</td>
         </tr>
       ))}
     </tbody>
