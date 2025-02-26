@@ -1,12 +1,24 @@
-import './App.css'
+import "./App.css";
+import Header from "./components/Header/Header";
+import BeTalentLogo from "./assets/BeTalent.svg";
+import InputSearch from "./components/Input/InputSearch";
 
 function App() {
-
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
-  )
+    <main className="app-container">
+      <Header logo={BeTalentLogo} altText="BeTalent Logo" />
+
+      <section className="main-content">
+        <h1 className="h1">Funcionários</h1>
+        <div className="search">
+          <InputSearch />
+        </div>
+      </section>
+
+      <section className="employees-table">
+      </section>
+    </main>
+  );
 }
 
-export default App
+export default App;

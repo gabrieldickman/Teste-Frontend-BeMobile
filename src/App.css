@@ -1,0 +1,41 @@
+:root{
+  --gray-00: #F0F0F0;
+  --black-neutral: #1C1C1C;
+
+  --h1: 500 2rem 'Heveltica', sans-serif;
+}
+
+.app-container{
+  background-color: var(--gray-00);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4.4rem;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.h1{
+  font: var(--h1);
+  color: var(--black-neutral)
+}
+
+@media screen and (max-width: 480px){
+  .main-content{
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: start;
+  }
+  .search, .h1{
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+}
