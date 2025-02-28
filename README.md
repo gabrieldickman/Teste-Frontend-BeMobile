@@ -1,4 +1,4 @@
-![image]([https://github.com/gabrieldickman/quick-service-frontend/blob/master/src/img/image%201.svg](https://github.com/gabrieldickman/Teste-Frontend-BeMobile/blob/main/src/assets/Screen%20web%20-%20Employees.jpg))
+![image](https://github.com/gabrieldickman/Teste-Frontend-BeMobile/blob/main/src/assets/Screen%20web%20-%20Employees.jpg))
 
 # TESTE FRONTEND BETALENT
 Sistema desenvolvido para o Teste Prático de Front-end da BeMobile.
