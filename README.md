@@ -59,7 +59,7 @@ O projeto estará disponível na URL: http://localhost:5173
 
 ### Servidor JSON (json-server)
 
-Para que os dados sejam consultados e mostrados na tabela, é necessário simular a API localmente, para isso, abra um novo terminal execute o seguinte comando:
+Para que os dados sejam consultados e mostrados na tabela, é necessário simular a API localmente. Para isso, abra um novo terminal execute o seguinte comando:
 ```
 npm run database
 ```
