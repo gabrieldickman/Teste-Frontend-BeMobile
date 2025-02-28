@@ -50,7 +50,7 @@ npm install
 
 ### INSTALANDO DEPENDÊNCIAS
 
-Após finalizar as etapas anteriores, rode o projeto com o comando:
+Após finalizar as etapas anteriores, abra o terminal e rode o projeto com o comando:
 
 ```
 npm run dev
@@ -59,8 +59,9 @@ O projeto estará disponível na URL: http://localhost:5173
 
 ### Servidor JSON (json-server)
 
-Para que os dados sejam consultados e mostrados na tabela, é necessário simular a API localmente, para isso, execute o seguinte comando:
+Para que os dados sejam consultados e mostrados na tabela, é necessário simular a API localmente, para isso, abra um novo terminal execute o seguinte comando:
 ```
 npm run database
 ```
+Após isso, basta carregar a página e os dados irão aparecer na tabela.
 
