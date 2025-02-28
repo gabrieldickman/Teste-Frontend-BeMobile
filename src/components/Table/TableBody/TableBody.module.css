@@ -1,14 +1,16 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 
+:root {
+  --white-natural: #ffffff;
+  --black-natural: #1c1c1c;
+  --blue-primary: #0500ff;
+  --gray-10: #dfdfdf;
 
-:root{
-  --white-natural: #FFFFFF;
-  --black-natural: #1C1C1C;
-
-  --h3: 400 1.6rem 'Helvetica neue', sans-serif;
+  --h2: 500 1.6rem "Helvetica neue", sans-serif;
+  --h3: 400 1.6rem "Helvetica neue", sans-serif;
 
   --border: 1px solid #ddd;
-  --hover: #f5f5f5; 
+  --hover: #f5f5f5;
   --padding: 1rem 5rem;
 }
 
@@ -21,11 +23,11 @@
 }
 
 .trow:hover {
-  background-color: var(--hover)
+  background-color: var(--hover);
 }
 
 .tdata {
-  padding:var(--padding);
+  padding: 1rem 2rem;
   text-align: left;
   font: var(--h3);
   color: var(--black-natural);
@@ -35,5 +37,48 @@
   width: 3.4rem;
   height: 3.4rem;
   border-radius: 50%;
-  object-fit: cover; 
+  object-fit: cover;
+}
+
+.dropdownBtn {
+  display: none;
+}
+
+.dropdownContent {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileHide {
+    display: none;
+  }
+
+  .dropdownBtn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--blue-primary);
+  }
+
+  .dropdownContent {
+    display: table-cell;
+    padding: 1rem 3rem;
+    background-color: var(--white-natural);
+    border-bottom: var(--border);
+    text-align: left;
+    font: var(--h3);
+    color: var(--black-natural);
+  }
+
+  .dropdownContent p {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdownContent hr {
+    border-top: 1px dashed var(--gray-10);
+    margin-top: -1.5rem;
+  }
 }

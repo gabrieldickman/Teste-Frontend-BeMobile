@@ -1,20 +1,18 @@
 :root{
-  --header-width: 100%;
   --header-height: 6rem;
+  --header-width: 10rem;
   --shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
 
   --white-natural: #FFFFFF;
 }	
 
 .header{
-  width: var(--header-width);
-  height: var(--header-height);
   background-color: var(--white-natural);
   box-shadow: var(--shadow);
 }
 
 .logo{
-  width: 9.1rem;
-  height: 100%;
-  margin: 0 0 0 2rem;
+  width: var(--header-width);
+  margin-left: 3rem;
+  height: var(--header-height);
 }

@@ -1,48 +1,80 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 
-:root{
-  --gray-00: #F0F0F0;
-  --black-neutral: #1C1C1C;
+:root {
+  --gray-00: #f0f0f0;
+  --black-neutral: #1c1c1c;
 
-  --h1: 500 2rem 'Helvetica neue', sans-serif;
+  --gap: 4.4rem;
+
+  --h1: 500 2rem "Helvetica neue", sans-serif;
 }
 
-.app-container{
+.app-container {
   background-color: var(--gray-00);
   display: flex;
-  height: 100vh;
   flex-direction: column;
-  gap: 4.4rem;
+  height: 100vh;
+  gap: var(--gap);
 }
 
-.main-content{
+.main-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  margin: 0 5rem;
 }
 
-.h1{
+.h1 {
   font: var(--h1);
-  color: var(--black-neutral)
+  color: var(--black-neutral);
 }
 
-.employees-table{
+.employees-table {
   display: flex;
   justify-content: center;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 1280px) {
+  .app-container {
+    height: 100vh;
+  }
+  .main-content {
+    margin: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .app-container {
+    height: 100vh;
+  }
+  .main-content {
+    margin: 0 7rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .app-container {
+    height: 100vh;
+  }
+  .main-content {
+    margin: 0 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    height: 100vh;
+  }
+  .main-content {
+    margin: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app-container {
+    height: 100vh;
+  }
   .main-content {
     flex-direction: column;
-    gap: 2.4rem;
-    align-items: flex-start; 
-  }
-  .search, .h1 {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: 400px; 
-    padding: 0.5rem; 
+    margin: -2.4rem 2rem;
   }
 }

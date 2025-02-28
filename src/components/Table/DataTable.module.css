@@ -1,6 +1,7 @@
 .table {
   border-radius: 0.8rem 0.8rem 0 0;
   overflow: hidden;
-  width: 96.1%; 
-  border-collapse: collapse; 
+  width: 90%; 
+  margin-bottom: 10rem;
+  border-collapse: collapse;
 }

@@ -5,12 +5,12 @@
   --white-natural: #FFFFFF;
   --h2: 500 1.6rem 'Helvetica neue', sans-serif;
   --border: 1px solid #ddd;
+
 }
 
 .thead {
   background-color: var(--blue-primary);
   height: 4.7rem;
-  border-bottom: var(--border);
 }
 
 .trow {
@@ -18,8 +18,23 @@
 }
 
 .tdata {
-  padding: 0 5rem;
+  padding: 2rem;
   text-align: left;
   font: var(--h2);
   border: none; 
 }
+
+@media (max-width: 768px) {
+  .mobileHide {
+    display: none;
+  }
+  .dot {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+

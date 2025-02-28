@@ -18,7 +18,6 @@ function App() {
           <InputSearch searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </div>
       </section>
-
       <section className="employees-table">
         <DataTable searchTerm={searchTerm} />
       </section>

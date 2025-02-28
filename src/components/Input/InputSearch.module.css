@@ -6,12 +6,18 @@
   --gray-20: 0.1rem solid #9E9E9E;
 
   --h3: 400 1.6rem 'Heveltica neue', sans-serif;
+
+  --input-width: 28.7rem;
+  --input-padding: 1.6rem;
+
+  --radius: 0.8rem;
+
 }
 
 .input{
-  width: 28.7rem;
-  padding: 1.6rem;
-  border-radius: 0.8rem;
+  width: var(--input-width);
+  padding: var(--input-padding);
+  border-radius: var(--radius);
   border: var(--gray-10);
   background-color: var(--white-natural);
 
@@ -24,9 +30,8 @@
   outline: none;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
   .input{
-    width: 90vw;
-    margin: 0 auto;
+    width: 100%;
   }
 }
