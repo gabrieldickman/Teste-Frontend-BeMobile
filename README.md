@@ -31,7 +31,7 @@ A tabela é responsiva e possui funcionalidades como pesquisa e filtragem de fun
 Clone o projeto na sua máquina local no diretório de sua preferência: 
 
 ```
-git clone https://github.com/gabrieldickman/Teste-Frontend-BeMobile.git
+git clone https://github.com/gabrieldickman/teste-frontend-bemobile.git
 ```
 ### INSTALANDO DEPENDÊNCIAS
 
