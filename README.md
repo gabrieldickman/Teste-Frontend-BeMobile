@@ -38,7 +38,7 @@ git clone https://github.com/gabrieldickman/Teste-Frontend-BeMobile.git
 Entre na pasta do projeto clonado:
 
 ```
-cd teste-frontend-betalent
+cd teste-frontend-bemobile
 ```
 
 Realize a instalação das dependências do projeto (exemplo com npm):
