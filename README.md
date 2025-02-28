@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# TESTE FRONTEND BETALENT
+Sistema desenvolvido para o Teste Prático de Front-end da BeMobile.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Introdução
+Este projeto consiste na exibição de uma tabela dinâmica de funcionários cadastrados, onde os dados são obtidos de uma API simulada utilizando `json-server`. <br>
 
-Currently, two official plugins are available:
+A tabela é responsiva e possui funcionalidades como pesquisa e filtragem de funcionários.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ⚙️ Pré-requisitos
 
-## Expanding the ESLint configuration
+- Node.js
+- GIT
+- Um Editor de Código ou IDE
+- npm ou yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 💻 Tecnologias utilizadas:
 
-- Configure the top-level `parserOptions` property like this:
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![Axios](https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 🛠️ Guia de Instalação
+
+### CLONE DO PROJETO
+
+Clone o projeto na sua máquina local no diretório de sua preferência: 
+
+```
+git clone 
+```
+### INSTALANDO DEPENDÊNCIAS
+
+Entre na pasta do projeto clonado:
+
+```
+cd teste-frontend-betalent
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Realize a instalação das dependências do projeto (exemplo com npm):
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+npm install
+```
+
+### INSTALANDO DEPENDÊNCIAS
+
+Após finalizar as etapas anteriores, rode o projeto com o comando:
+
+```
+npm run dev
+```
+O projeto estará disponível na URL: http://localhost:5173
+
+### Servidor JSON (json-server)
+
+Para que os dados sejam consultados e mostrados na tabela, é necessário simular a API localmente, para isso, execute o seguinte comando:
+```
+npm run database
+```
+
